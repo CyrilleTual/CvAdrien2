@@ -1,0 +1,306 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+#blocPage {
+  position: static;
+  display: block;
+}
+
+aside a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+aside a:hover {
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+body {
+  /* background-color: rgb(61, 13, 13); */
+  background-image: url(images/fond_jaune.png);
+  background-repeat: repeat;
+}
+
+#blocPage {
+  display: flex;
+  margin: auto;
+  flex-basis: 1200px;
+  max-width: 1200px;
+  flex-wrap: no-wrap;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+aside {
+  background-color: rgba(47, 85, 151, 255);
+  background-size: 800px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#imageAngle {
+  width: 110px;
+  float: left;
+  position:absolute
+
+}
+
+#photoIdentite {
+  width: 200px;
+  margin: 1.5rem auto;
+  z-index: 3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  position: static;
+}
+
+main #header {
+  background-image: url(images/liseret_haut.jpg);
+  background-repeat: repeat-x;
+  position: relative;
+}
+
+#cv {
+  float: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#angleMain {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+h1 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 3.4rem;
+  color: rgba(47, 85, 151, 255);
+  text-shadow: 1px 2px 2px red;
+
+  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+}
+
+.responsive {
+  display: none;
+}
+
+h2 {
+  padding: 0.5em;
+  text-align: left;
+  font-size: 1.5rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+main h2 {
+  position: sticky;
+  background-color: rgba(47, 85, 151, 255);
+  top: 00px;
+}
+
+h3,
+h4 {
+  font-size: 1.2rem;
+}
+li {
+  list-style: none;
+}
+
+p {
+  padding: 0.5em;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+article {
+  margin: 0.8rem;
+  padding: 0.8rem;
+  flex-wrap: wrap;
+  border: 1px solid rgb(36, 24, 15);
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(141, 129, 129);
+}
+
+aside article {
+  border: 0px;
+  box-shadow: none;
+  color: aliceblue;
+  padding: 0px 0px 30px 0px;
+  margin-top: 0px;
+}
+
+.paveHaut {
+  /* border: 3px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#paveGauche {
+  flex-basis: 200px;
+  text-align: center;
+}
+.logo {
+  /* border: 3px solid blue; */
+  max-width: 200px;
+  padding: 0.3rem;
+  max-height: 50px;
+}
+
+#paveDroit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.3rem;
+}
+
+article ul {
+  padding-left: 10px;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+ul ul li {
+  padding-left: 40px;
+}
+
+/* icones  */
+
+.icone {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.boite {
+  background-image: url("icones/letterBoxBlanc.png");
+}
+.mail {
+  background-image: url("icones/email_letter_mail_icon_blanc.png");
+}
+.tel {
+  background-image: url("icones/211829_telephone_icon_blanc.png");
+}
+.linkedin {
+  background-image: url("icones/social_linkedin_icon_blanc.png");
+}
+
+/*/////////////////////////////   reponsive ////*/
+
+@media (max-width: 800px) {
+  .responsive {
+    display: block;
+    position: static;
+  }
+
+  main #header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-image: url(images/fond_jaune.png), url(images/liseret_haut.jpg);
+    background-repeat: repeat;
+  }
+
+  #contact {
+    order: 10;
+  }
+
+  h1 {
+    padding: 1.2rem;
+    font-size: 2.8rem;
+    background-image: url(images/liseret_haut.jpg);
+    background-repeat: repeat-x;
+  }
+  main h2 {
+    top: 5rem;
+  }
+  .logo {
+    max-width: 150px;
+    padding: 0.1rem 0.1rem 0.1rem 0;
+    max-height: 50px;
+  }
+
+  aside h2 {
+    position: sticky;
+    background-color: rgba(47, 85, 151, 255);
+    top: 5rem;
+  }
+
+  #responsive {
+    display: flex;
+    position: static;
+  }
+
+  #photoIdentite {
+  width: 180px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+  #blocPage {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  aside {
+    width: 100%;
+    order: 2;
+    background: transparent;
+    color: black;
+  }
+
+  aside img {
+    display: none;
+  }
+
+  aside li,
+  aside a {
+    color: black;
+  }
+
+  aside article {
+    margin: 0.8rem;
+    padding: 0.8rem;
+    flex-wrap: wrap;
+    border: 2px solid rgb(36, 24, 15);
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgb(141, 129, 129);
+  }
+  /* modifications des icones de contact*/
+
+  .boite {
+    background-image: url("icones/bose.png");
+  }
+  .mail {
+    background-image: url("icones/5340267_e_email_letter_mail_icon.png");
+  }
+  .tel {
+    background-image: url("icones/211830_telephone_icon.png");
+  }
+  .linkedin {
+    background-image: url("icones/211910_social_linkedin_icon.png");
+  }
+}
