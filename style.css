@@ -216,11 +216,11 @@ ul ul li {
 /*////////////////////////////////////////*/
 /*        modal                    */
 /****************************************/
-#lienPopUp {
+#lienPopUp1 {
   text-align: center;
 }
 
-#modal-container {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -230,6 +230,7 @@ ul ul li {
   justify-content: center;
   align-items: center;
   display: flex;
+  z-index: 5;
 }
 
 .modal {
@@ -240,6 +241,7 @@ ul ul li {
   text-align: center;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
+  color:black
 }
 
 #modal-container:not(:target) {
@@ -253,6 +255,19 @@ ul ul li {
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
+
+#modal-container2:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+
+#modal-container2:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s, visibility 1s;
+}
+
 
 #lienPopUp {
   text-align: right;
@@ -324,10 +339,10 @@ ul ul li {
     color: black;
   }
 
-  aside img {
+
+   aside #photoIdentite, #imageAngle {
     display: none;
   }
-
   aside li,
   aside a {
     color: black;
