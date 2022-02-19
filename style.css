@@ -12,6 +12,8 @@ html {
 #blocPage {
   position: static;
   display: block;
+  border-right: 2px  solid rgb(24, 24, 26);
+  border-left: 2px  solid rgb(24, 24, 26);
 }
 
 aside a {
@@ -193,11 +195,17 @@ ul ul li {
 }
 
 .icone2 {
-  margin-top: 0.5rem;
-  height: 1.5rem;
+  margin-top: 0rem;
+  height: 2rem;
+  position: sticky;
+  bottom: 0em;
+  font-size: 3rem;
+  text-decoration: none;
 }
-.icone2:hover{
-  
+
+.icone2:hover {
+  font-size: 3rem;
+  text-decoration: none;
   background-color: crimson;
 }
 
@@ -218,7 +226,7 @@ ul ul li {
 /*        modal                    */
 /****************************************/
 #lienPopUp1 {
-  text-align: center;
+  text-align: right;
 }
 
 .modal-container {
@@ -235,10 +243,11 @@ ul ul li {
 }
 
 .modal {
+  position: static;
   width: 70%;
   min-height: 80%;
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
@@ -247,6 +256,8 @@ ul ul li {
 .modal p {
   text-align: right;
   color: black;
+  margin: 0px;
+  padding-top: 0px;
 }
 .modal a {
   color: black;
@@ -263,21 +274,68 @@ ul ul li {
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
-/* modal 2  */
+/*******************   modal 2  **********/
 #modal-container2:not(:target) {
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s, visibility 1s;
 }
-
 #modal-container2:target {
   opacity: 1;
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
-/* fin modal 2 */
-#lienPopUp {
+/****************** fin modal 2  **********/
+/*******************   modal 3  **********/
+#modal-container3:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+#modal-container3:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s, visibility 1s;
+}
+/****************** fin modal 3  **********/
+
+/*******************   modal 4  **********/
+#modal-container4:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+#modal-container4:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s, visibility 1s;
+}
+#lienPopUp4 {
   text-align: right;
+}
+
+/****************** fin modal 4  **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lienPopUp {
+
+  position: static;
+
 }
 
 /*/////////////////////////////   reponsive ////*/
