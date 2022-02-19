@@ -35,13 +35,12 @@ body {
   margin: auto;
   flex-basis: 1200px;
   max-width: 1200px;
-  flex-wrap: no-wrap;
   min-height: 100vh;
   flex-direction: row;
 }
 
 aside {
-  background-color: rgba(47, 85, 151, 255);
+  background-color: rgba(47, 85, 151, 1);
   background-size: 800px;
   width: 35%;
   display: flex;
@@ -63,7 +62,6 @@ aside {
 main {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
   position: static;
 }
 
@@ -91,7 +89,7 @@ h1 {
   padding: 2rem;
   text-align: center;
   font-size: 3.4rem;
-  color: rgba(47, 85, 151, 255);
+  color: rgba(47, 85, 151, 1);
   text-shadow: 1px 2px 2px red;
 
   /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
@@ -112,7 +110,7 @@ h2 {
 
 main h2 {
   position: sticky;
-  background-color: rgba(47, 85, 151, 255);
+  background-color: rgba(47, 85, 151, 1);
   top: 00px;
 }
 
@@ -196,8 +194,11 @@ ul ul li {
 
 .icone2 {
   margin-top: 0.5rem;
-  height: 1.2rem;
+  height: 1.5rem;
+}
+.icone2:hover{
   
+  background-color: crimson;
 }
 
 .boite {
@@ -241,7 +242,14 @@ ul ul li {
   text-align: center;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
-  color:black
+  color: black;
+}
+.modal p {
+  text-align: right;
+  color: black;
+}
+.modal a {
+  color: black;
 }
 
 #modal-container:not(:target) {
@@ -255,7 +263,7 @@ ul ul li {
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
-
+/* modal 2  */
 #modal-container2:not(:target) {
   opacity: 0;
   visibility: hidden;
@@ -267,13 +275,10 @@ ul ul li {
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
-
-
+/* fin modal 2 */
 #lienPopUp {
   text-align: right;
 }
-
-
 
 /*/////////////////////////////   reponsive ////*/
 
@@ -312,7 +317,7 @@ ul ul li {
 
   aside h2 {
     position: sticky;
-    background-color: rgba(47, 85, 151, 255);
+    background-color: rgba(47, 85, 151, 1);
     top: 5rem;
   }
 
@@ -339,8 +344,8 @@ ul ul li {
     color: black;
   }
 
-
-   aside #photoIdentite, #imageAngle {
+  aside #photoIdentite,
+  #imageAngle {
     display: none;
   }
   aside li,
