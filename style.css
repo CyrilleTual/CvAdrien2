@@ -12,8 +12,8 @@ html {
 #blocPage {
   position: static;
   display: block;
-  border-right: 2px  solid rgb(24, 24, 26);
-  border-left: 2px  solid rgb(24, 24, 26);
+  border-right: 2px solid rgb(24, 24, 26);
+  border-left: 2px solid rgb(24, 24, 26);
 }
 
 aside a {
@@ -30,6 +30,10 @@ body {
   /* background-color: rgb(61, 13, 13); */
   background-image: url(images/fond_jaune.png);
   background-repeat: repeat;
+}
+
+.aligne {
+  vertical-align: bottom;
 }
 
 #blocPage {
@@ -261,6 +265,7 @@ ul ul li {
 }
 .modal a {
   color: black;
+  font-size: 1.4rem;
 }
 
 #modal-container:not(:target) {
@@ -316,26 +321,8 @@ ul ul li {
 
 /****************** fin modal 4  **********/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #lienPopUp {
-
   position: static;
-
 }
 
 /*/////////////////////////////   reponsive ////*/
